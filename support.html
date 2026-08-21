@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Petasos</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="icon.png" alt="">
+    <span class="name">Petasos</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Support</h1>
+    <p class="updated">Help with Petasos for iOS and macOS</p>
+
+    <div class="callout">
+      <p><strong>Contact:</strong> <a href="mailto:support@tabotec.com">support@tabotec.com</a>.
+      Include your app version (Settings ▸ About) and, if it's a bug, the diagnostics
+      log (Settings ▸ Data &amp; Privacy ▸ Export diagnostics log — it contains no
+      chat content or credentials).</p>
+    </div>
+
+    <h2>Getting connected</h2>
+    <ul>
+      <li><strong>What do I need?</strong> A running
+      <a href="https://hermes-agent.nousresearch.com/">Hermes Agent</a> gateway on your
+      own machine. Petasos is the client; the agent runs on your hardware.</li>
+      <li><strong>Easiest pairing:</strong> on the gateway machine run
+      <code>hermes-pair-qr</code>, then tap <em>Scan pairing QR code</em> in Petasos.
+      You can also enter the gateway URL manually and sign in.</li>
+      <li><strong>Just exploring?</strong> Tap <em>Try Demo Mode</em> on the first
+      screen — the full app on example data, no gateway needed.</li>
+    </ul>
+
+    <h2>Common issues</h2>
+    <ul>
+      <li><strong>"Disconnected" won't go away</strong> — check that your gateway
+      process is running and reachable from your phone's network. If your gateway is
+      on a VPN or tailnet, make sure the phone is connected to it. Petasos retries
+      automatically and reconnects the moment the gateway is reachable.</li>
+      <li><strong>Opening a session shows a spinner for a long time</strong> — very
+      large sessions take a moment to load their history; the spinner is normal for
+      the first open.</li>
+      <li><strong>A session never answers</strong> — extremely long-lived sessions can
+      outgrow your agent's context management. Start a fresh session for new work;
+      your old session's history stays on your gateway.</li>
+      <li><strong>No notification banners</strong> — check the permission state in
+      Settings ▸ Notifications inside Petasos, and that Petasos is allowed in the
+      system notification settings. Use <em>Send Test</em> to verify instantly.</li>
+      <li><strong>Voice notes transcribe nothing</strong> — enable Dictation in your
+      device's keyboard settings to install the on-device speech model, and check
+      microphone + speech permissions for Petasos.</li>
+    </ul>
+
+    <h2>Your data</h2>
+    <p>Petasos stores your conversations nowhere — they live on your gateway. See the
+    <a href="privacy.html">Privacy Policy</a> for the complete picture.</p>
+  </main>
+
+  <footer class="site">
+    <p>Petasos is made by Tabotec, INC. · <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</div>
+</body>
+</html>

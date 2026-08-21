@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Petasos</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="icon.png" alt="">
+    <span class="name">Petasos</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: August 21, 2026 · Applies to Petasos for iOS and macOS</p>
+
+    <div class="callout">
+      <p><strong>The short version:</strong> Petasos is a client for <strong>your own</strong>
+      Hermes Agent gateway. It has no backend of ours, no tracking, no ads, and no
+      third-party SDKs. Your data goes to the gateway <strong>you</strong> configure —
+      and nowhere else, unless you explicitly turn on optional error reporting.</p>
+    </div>
+
+    <h2>What Petasos stores, and where</h2>
+    <ul>
+      <li><strong>Gateway credentials</strong> (the gateway URL and either a
+      username/password or a session token) are stored in the device
+      <strong>Keychain</strong>, marked this-device-only. They are never sent to the
+      developer or any third party — only to the gateway you entered, to authenticate.</li>
+      <li><strong>App preferences</strong> (theme, sounds, notification and layout
+      settings) live in your device's local preferences.</li>
+      <li><strong>Chat content and session data</strong> are <strong>not stored by
+      Petasos</strong>. Messages transit directly between your device and your gateway;
+      your gateway (which you control) holds conversation history.</li>
+      <li>A <strong>local diagnostics log</strong> (errors and connection events, with
+      web addresses and any credential-shaped text removed before writing) is kept on
+      your device so you can attach it to a support request. It never leaves your
+      device unless you export it yourself or enable the optional reporting below.</li>
+    </ul>
+
+    <h2>What Petasos transmits</h2>
+    <ul>
+      <li>Requests to <strong>your gateway</strong> (over HTTPS, or plain HTTP only if
+      you configure a local-network/VPN gateway that way): conversations, session
+      lists, live activity, file attachments you send, and scheduled-job management.</li>
+      <li><strong>Optional, off by default — anonymous error reports.</strong> If you
+      turn on "Share anonymous error reports" in Settings, Petasos sends the developer
+      redacted error and crash events (the error text with addresses and secrets
+      stripped), plus the app version and OS version. Never included: chat content,
+      your gateway's address, credentials, or anything identifying you or your device.
+      Turning the switch off also discards any queued reports. If you never touch the
+      switch, nothing is ever sent.</li>
+      <li>Nothing else. No analytics, no advertising, no tracking.</li>
+    </ul>
+
+    <h2>Camera, microphone, and speech</h2>
+    <ul>
+      <li><strong>Camera</strong> — used only when you tap "Scan pairing QR code."
+      No images are stored or transmitted.</li>
+      <li><strong>Microphone &amp; speech recognition</strong> — used only when you tap
+      the voice-note button. Audio is recorded to a temporary file and transcribed
+      into text — on-device whenever your device supports it, otherwise via Apple's
+      standard speech service — then the audio file is deleted. Petasos never uploads
+      your audio to your gateway or to the developer; only the text you choose to
+      send goes to your gateway.</li>
+    </ul>
+
+    <h2>Local network</h2>
+    <p>Petasos may connect to gateways on your local network or VPN, which is why the
+    system asks for local-network permission. It is used solely to reach the gateway
+    you configured.</p>
+
+    <h2>Tracking</h2>
+    <p>Petasos does <strong>not</strong> track you across apps or websites and includes
+    no third-party tracking technology. Per Apple's definitions, Petasos collects no
+    data linked to your identity.</p>
+
+    <h2>Children</h2>
+    <p>Petasos is a developer/productivity tool and is not directed at children.</p>
+
+    <h2>Changes &amp; contact</h2>
+    <p>If this policy changes, the new version will be posted at this address with an
+    updated date. Questions: <a href="mailto:support@tabotec.com">support@tabotec.com</a>.</p>
+  </main>
+
+  <footer class="site">
+    <p>Petasos is made by Tabotec, INC. · <a href="support.html">Support</a></p>
+  </footer>
+</div>
+</body>
+</html>
